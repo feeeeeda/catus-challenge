@@ -181,6 +181,7 @@ nav .icon-close {
   top: -2.5rem;
   right: 2rem;
   transition: 0.3s;
+  z-index: 9999;
 }
 
 nav.show div.icon-close {
