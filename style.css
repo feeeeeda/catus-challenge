@@ -193,6 +193,49 @@ nav.show div.icon-close {
   align-items: center;
 }
 
+/* Mosaic Section */
+
+section {
+  padding: var(--padding-desktop);
+}
+
+.mosaic {
+  display: grid;
+  gap: 1.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-auto-rows: 15rem;
+}
+
+.card {
+  border-radius: 1rem;
+  transition: all 500ms;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.news-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: var(--font-secondary);
+}
+
+.news-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--font-secondary);
+}
+
+.news-subtitle {
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--font-secondary);
+}
+
 /* Responsive */
 
 @media (max-width: 2560px) {

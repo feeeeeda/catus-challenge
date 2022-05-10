@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <!-- Scripts -->
-    <script defer src='./main.js'></script>
+    <script defer src="./main.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -50,43 +50,85 @@
       </nav>
     </header>
 
+    <!-- Main content -->
     <main>
-      <div class="mosaic">
-        <div class="div1">
-          <img
-            src="./assets/Rectangle40.png"
-            alt="Quarto de criança com paredes verde claro, piso de madeira claro, com um berço no centro na cor branca em estilo clássico"
-          />
+      <section>
+        <div class="mosaic">
+          <div
+            class="card"
+            style="background-image: url('./assets/mosaic/Rectangle40.png')"
+          ></div>
+          <div
+            class="card card-tall"
+            style="background-image: url('./assets/mosaic/Rectangle39.png')"
+          ></div>
+          <div
+            class="card"
+            style="background-image: url('./assets/mosaic/Rectangle41.png')"
+          ></div>
+          <div
+            class="card"
+            style="background-image: url('./assets/mosaic/Rectangle42.png')"
+          ></div>
+          <div
+            class="card"
+            style="background-image: url('./assets/mosaic/Rectangle43.png')"
+          ></div>
         </div>
-        <div class="div2">
-          <img
-            src="./assets/Rectangle41.png"
-            alt="Mulher sorrindo deitada segurando o bebê levenete acima na altura de sua cabeça, com cestos de palha em bege e preto"
-          />
+      </section>
+      <section class="news-container">
+        <h2 class="news-title">Confira as Novidades</h2>
+        <h3 class="news-subtitle">
+          Vestibulum vestibulum sef lacus non pellentesque.
+        </h3>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="./assets/products/product-1.png" alt="" />
+              <p class="product-title">Lorem ipsum dolor sit amet</p>
+              <div class="row-price">
+                <p class="product first-price">R$ 159,90</p>
+                <p class="product second-price">R$ 159,90</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/products/product-3.png" alt="" />
+              <p class="product-title">Lorem ipsum dolor sit amet</p>
+              <div class="column-price">
+                <p class="product second-price">R$ 159,90</p>
+                <p class="product installment">em até 3x R$53,30 no cartão</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/products/product-2.png" alt="" />
+              <p class="product-title">Lorem ipsum dolor sit amet</p>
+              <div class="row-price">
+                <p class="product first-price">R$ 159,90</p>
+                <p class="product second-price">R$ 159,90</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/products/product-1.png" alt="" />
+              <p class="product-title">Lorem ipsum dolor sit amet</p>
+              <div class="row-price">
+                <p class="product first-price">R$ 159,90</p>
+                <p class="product second-price">R$ 159,90</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/products/product-2.png" alt="" />
+              <p class="product-title">Lorem ipsum dolor sit amet</p>
+              <div class="row-price">
+                <p class="product first-price">R$ 159,90</p>
+                <p class="product second-price">R$ 159,90</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
-        <div class="div3">
-          <img
-            src="./assets/Rectangle39.png"
-            alt="Mulher abaixada mostrando um livro infantil para um bebê no carrinho, ao fundo uma rua com árvores"
-          />
-        </div>
-        <div class="div4">
-          <img
-            src="./assets/Rectangle42.png"
-            alt="Mulher grávida segurando uma roupa de bebê azul com berço de madeira escura ao fundo"
-          />
-        </div>
-        <div class="div5">
-          <img
-            src="./assets/Rectangle43.png"
-            alt="Um homem e uma mulher sorrindo, sentados em um sofá com um bebê no colo"
-          />
-        </div>
-      </div>
-      <div class="news-container">
-        <h2>Confira as Novidades</h2>
-        <p>Vestibulum vestibulum sed lacus non pellentesque.</p>
-      </div>
+      </section>
     </main>
   </body>
 </html>
