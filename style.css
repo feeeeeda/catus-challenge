@@ -295,6 +295,28 @@ section {
   font-size: 0.75rem;
 }
 
+#footer {
+  width: 100%;
+  padding: var(--padding-desktop);
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--header-color);
+  height: 8vh;
+  align-items: center;
+  z-index: 9998;
+}
+
+.fab {
+  font-size: 2.5rem;
+  color: var(--font-primary);
+  transition: 0.4s;
+}
+
+.fab:hover {
+  color: var(--font-secondary);
+  transform: scale(1.1);
+}
+
 /* Responsive */
 
 @media (max-width: 2560px) {
@@ -366,6 +388,10 @@ section {
   section {
     padding: var(--padding-tablet);
   }
+
+  #footer {
+    padding: var(--padding-tablet);
+  }
 }
 
 @media (max-width: 600px) {
@@ -376,6 +402,10 @@ section {
 
   .card {
     grid-row: span 2 / auto;
+  }
+
+  #footer {
+    padding: var(--padding-mobile);
   }
 }
 
