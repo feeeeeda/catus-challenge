@@ -5,28 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <!-- Scripts -->
+    <script defer src='./main.js'></script>
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <img src="./assets/logo.svg" alt="Catus - Agência de Desenvolvimento" />
-      <nav>
-        <ul>
-          <li>Loja</li>
-          <li>Login</li>
-          <li>Sobre</li>
-          <li>Contato</li>
-        </ul>
+    <header id="header" class="scroll">
+      <nav class="container">
+        <a class="logo" href="#"><img src="./assets/logo.svg" alt="" /></a>
+
+        <!-- menu -->
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="title" href="#home">Loja</a></li>
+            <li><a class="title" href="#about">Login</a></li>
+            <li><a class="title" href="#services">Sobre</a></li>
+            <li><a class="title" href="#contact">Contato</a></li>
+          </ul>
+          <!-- Search Bar -->
+          <div class="search-bar">
+            <input type="text" placeholder="Digite aqui sua busca" />
+            <img src="./assets/union.svg" alt="" />
+          </div>
+        </div>
+        <!-- menu -->
+        <img class="shopping-cart desktop" src="./assets/cart.svg" alt="" />
+        <div class="mobile-menu">
+          <img class="shopping-cart" src="./assets/cart.svg" alt="" />
+          <div class="toggle icon-open">
+            <img
+              class="menu-icon"
+              src="./assets/open-icon.svg"
+              alt="Ícone para abrir o menu"
+            />
+          </div>
+          <div class="toggle icon-close">
+            <img
+              class="menu-icon"
+              src="./assets/close-icon.svg"
+              alt="Ícone para fechar o menu"
+            />
+          </div>
+        </div>
       </nav>
-      <div class="search-bar-container">
-        <input
-          class="search-bar"
-          type="text"
-          placeholder="Digite aqui sua busca"
-        />
-        <img class="loupe" src="./assets/Union.svg" alt="Lupa de pesquisa" />
-      </div>
-      <img src="./assets/cart.svg" alt="Carrinho de compras" />
     </header>
 
     <main>
