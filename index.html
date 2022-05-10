@@ -1,27 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script
+      defer
+      src="https://unpkg.com/swiper@8/swiper-bundle.min.js"
+    ></script>
+    <!-- Scripts -->
+    <script defer src="./main.js"></script>
+    <!-- Styles -->
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/ape.png" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@700&family=Open+Sans:wght@400;700&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Title -->
+    <title>Catus | Home</title>
   </head>
-  <header>
-    <img src="./assets/logo.svg" alt="Catus - Agência de Desenvolvimento" />
-    <nav>
-      <ul>
-        <li>Loja</li>
-        <li>Login</li>
-        <li>Sobre</li>
-        <li>Contato</li>
-      </ul>
-      <input class="search-bar" type="text" placeholder="Digite aqui sua busca">
-      <img src="./assets/Union.svg" alt="Lupa de pesquisa">
-      <img src="./assets/cart.svg" alt="Carrinho de compras">
-    </nav>
-  </header>
   <body>
-    <p class="teste">Alô mundo</p>
+    <header id="header" class="scroll">
+      <nav class="container">
+        <a class="logo" href="#"><img src="./assets/logo.svg" alt="" /></a>
+
+        <!-- menu -->
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="title" href="#home">Loja</a></li>
+            <li><a class="title" href="#about">Login</a></li>
+            <li><a class="title" href="#services">Sobre</a></li>
+            <li><a class="title" href="#contact">Contato</a></li>
+          </ul>
+          <!-- Search Bar -->
+          <div class="search-bar">
+            <input type="text" placeholder="Digite aqui sua busca" />
+            <img src="./assets/union.svg" alt="" />
+          </div>
+        </div>
+        <!-- menu -->
+        <img class="shopping-cart desktop" src="./assets/cart.svg" alt="" />
+        <div class="mobile-menu">
+          <img class="shopping-cart" src="./assets/cart.svg" alt="" />
+          <div class="toggle icon-open">
+            <img
+              class="menu-icon"
+              src="./assets/open-icon.svg"
+              alt="Ícone para abrir o menu"
+            />
+          </div>
+          <div class="toggle icon-close">
+            <img
+              class="menu-icon"
+              src="./assets/close-icon.svg"
+              alt="Ícone para fechar o menu"
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main content -->
+    <main>
+      <section>
+        <div class="mosaic">
+          <div
+            class="card"
+            style="background-image: url('./assets/mosaic/Rectangle40.png')"
+          ></div>
+          <div
+            class="card card-tall"
+            style="background-image: url('./assets/mosaic/Rectangle39.png')"
+          ></div>
+          <div
+            class="card"
+            style="background-image: url('./assets/mosaic/Rectangle41.png')"
+          ></div>
+          <div
+            class="card"
+            style="background-image: url('./assets/mosaic/Rectangle42.png')"
+          ></div>
+          <div
+            class="card"
+            style="background-image: url('./assets/mosaic/Rectangle43.png')"
+          ></div>
+        </div>
+      </section>
+      <section class="news-container">
+        <h2 class="news-title">Confira as Novidades</h2>
+        <h3 class="news-subtitle">
+          Vestibulum vestibulum sef lacus non pellentesque.
+        </h3>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="./assets/products/product-1.png" alt="" />
+              <p class="product-title">Lorem ipsum dolor sit amet</p>
+              <div class="row-price">
+                <p class="product first-price">R$ 159,90</p>
+                <p class="product second-price">R$ 159,90</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/products/product-3.png" alt="" />
+              <p class="product-title">Lorem ipsum dolor sit amet</p>
+              <div class="column-price">
+                <p class="product second-price">R$ 159,90</p>
+                <p class="product installment">em até 3x R$53,30 no cartão</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/products/product-2.png" alt="" />
+              <p class="product-title">Lorem ipsum dolor sit amet</p>
+              <div class="row-price">
+                <p class="product first-price">R$ 159,90</p>
+                <p class="product second-price">R$ 159,90</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/products/product-1.png" alt="" />
+              <p class="product-title">Lorem ipsum dolor sit amet</p>
+              <div class="row-price">
+                <p class="product first-price">R$ 159,90</p>
+                <p class="product second-price">R$ 159,90</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/products/product-2.png" alt="" />
+              <p class="product-title">Lorem ipsum dolor sit amet</p>
+              <div class="row-price">
+                <p class="product first-price">R$ 159,90</p>
+                <p class="product second-price">R$ 159,90</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
